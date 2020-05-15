@@ -24,7 +24,7 @@ class Login extends Component {
         this.state = {
             user: {
                 id: 1,
-                firstName: 'Mayura',
+                firstName: '',
                 email: '',
                 password: '',
                 cards: []

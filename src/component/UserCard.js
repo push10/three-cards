@@ -1,6 +1,7 @@
 import React from 'react';
 import male from '../resources/male.jpg'
 import female from '../resources/female.jpg';
+import unknown from '../resources/users.png';
 
 import deck from '../resources/PNG/blue_back.png'
 const UserCard = (props) => {
@@ -36,8 +37,10 @@ const UserCard = (props) => {
 const renderUser = (name) => {
     if (name === 'Mayura') {
         return <img alt='' src={female} style={{ maxWidth: '50px' }}></img>
-    } else {
+    } else if (name === 'Piyush') {
         return <img alt='' src={male} style={{ maxWidth: '50px' }}></img>
+    }else {
+        return <img alt='' src={unknown} style={{ maxWidth: '50px' }}></img>
     }
 }
 const seeCards = (event) => {
